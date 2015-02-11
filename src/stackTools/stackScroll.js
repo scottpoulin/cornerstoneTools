@@ -101,8 +101,8 @@ var cornerstoneTools = (function ($, cornerstone, cornerstoneTools) {
         scroll(eventData.element, images);
     }
 
-    function onDrag(e) {
-        var mouseMoveData = e.originalEvent.detail;
+    function onDrag(e, eventData) {
+        var mouseMoveData = eventData;
         var eventData = {
             deltaY : 0
         };
